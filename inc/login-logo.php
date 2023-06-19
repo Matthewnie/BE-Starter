@@ -49,6 +49,6 @@ function be_login_logo() {
 		esc_url( $logo ),
 		$height
 	);
-	wp_add_inline_style( 'theme-style', $styles );
+	wp_add_inline_style( 'login', $styles );
 }
-//add_action( 'login_head', 'be_login_logo' );
+//add_action( 'login_enqueue_scripts', 'be_login_logo' );
